@@ -3,6 +3,7 @@
     <div class="page">
       <div class="content">
         <div class="header">
+          <div class="logo">Peopleawesome</div>
           <div class="btn" @click="open()"><i class="fal fa-bars"></i></div>
         </div>
         <div class="container">
@@ -16,6 +17,7 @@
       </div>
       <div class="menu" :class="{ active: showMenu }">
         <div class="head">
+          <div class="logo">Peopleawesome</div>
           <div class="btn" @click="close()"><i class="fal fa-times"></i></div>
         </div>
         <div class="item">Home</div>
