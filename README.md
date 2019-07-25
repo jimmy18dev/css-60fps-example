@@ -10,6 +10,7 @@ npm install && npm run serve
 ### CSS 2D Transforms
 ```
 transform: rotate(20deg);
+transform: translateX(100px);
 ```
 
 ### CSS Transitions
