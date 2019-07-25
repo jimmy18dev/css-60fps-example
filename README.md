@@ -1,5 +1,7 @@
 # css60fps
 
+![Screenshot for css60fps example](https://raw.githubusercontent.com/jimmy18dev/css-60fps-example/master/screenshot/screenshot.png)
+
 ## Project setup
 ```
 npm install
