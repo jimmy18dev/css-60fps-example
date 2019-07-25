@@ -1,0 +1,27 @@
+// COLOR SETUP
+@bg-color: #FAFAFA;
+@bg-container: #FFFFFF;
+@font_color: #FFFFFF; // http://www.color-hex.com/color/55ce63
+@font_color_dark: #666666;
+@font_color_light: #BBBBBB;
+@primary_color: #2962FF;
+
+html {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+a[href], button {
+    -ms-touch-action: none; /* IE10 */
+    touch-action: none;     /* IE11 */
+}
+body {
+    background: @bg-color;
+    overflow-x: hidden;
+    font-family: @Font-normal;
+}
+.transitionAnimation(@s) {
+    transition: all @s ease-in-out;
+    -moz-transition: all @s ease-in-out;
+    -webkit-transition: all @s ease-in-out;
+    -o-transition: all @s ease-in-out;
+}

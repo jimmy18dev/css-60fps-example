@@ -1,29 +1,51 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="page">
+      <div class="content">
+        <div class="header">
+          <div class="btn" @click="open()"><i class="fal fa-bars"></i></div>
+        </div>
+        <div class="container">
+          <div class="image">
+            <img src="https://static.dezeen.com/uploads/2019/07/elon-musk-neuralink-technology_dezeen_2364_hero-1.jpg" alt="">
+          </div>
+          <h1>Elon Musk's Neuralink implant will "merge" humans with AI</h1>
+          <p>The approaching technology would see groups of minuscule, flexible electrode "threads" implanted into the human brain by a neurosurgical robot.</p>
+          <p>These threads detect and record the electrical signals in the brain, and transmit this information outside the body.</p>
+        </div>
+      </div>
+      <div class="menu" :class="{ active: showMenu }">
+        <div class="head">
+          <div class="btn" @click="close()"><i class="fal fa-times"></i></div>
+        </div>
+        <div class="item">Home</div>
+        <div class="item">Article</div>
+        <div class="item">Category</div>
+        <div class="item">About</div>
+      </div>
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import '@fortawesome/fontawesome-pro/css/all.css'
+export default {
+  data () {
+    return {
+      showMenu: false
+    }
+  },
+  methods: {
+    open: function () {
+      this.showMenu = true
+    },
+    close: function () {
+      this.showMenu = false
     }
   }
 }
+</script>
+
+<style lang="less">
+@import '~@/assets/less/style';
 </style>
