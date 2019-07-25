@@ -1,31 +1,18 @@
-# css60fps
+# CSS 60fps Example.
 
 ![Screenshot for css60fps example](https://raw.githubusercontent.com/jimmy18dev/css-60fps-example/master/screenshot/screenshot.png)
 
 ## Project setup
 ```
-npm install
+npm install && npm run serve
 ```
 
-### Compiles and hot-reloads for development
+### CSS 2D Transforms
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+transform: rotate(20deg);
 ```
 
-### Run your tests
+### CSS Transitions
 ```
-npm run test
+transition: all 0.3s ease-in-out;
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
