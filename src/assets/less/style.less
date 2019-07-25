@@ -18,17 +18,24 @@
     background: #FFFFFF;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
     position: relative;
+    overflow: hidden;
 
     .menu {
       position: absolute;
-      top: 10%;
-      left: -80%;
+      top: 0%;
+      left: -100%;
       width: 100%;
       height: 100%;
       background: #333333;
       display: flex;
       flex-direction: column;
+      transition: all 0.3s ease-in-out;
 
+      &.active {
+        // left: 0;
+        transform: translateX(100%);
+      }
+      
       .head {
         display: flex;
         justify-content: space-between;
@@ -105,6 +112,24 @@
           font-size: 1.5em;
           color: #333333;
           line-height: 1.3em;
+        }
+
+        .rating {
+          margin-bottom: 20px;
+          i {
+            font-size: 1.3em;
+            margin-right: 5px;
+            color: #AAAAAA;
+
+            &.selected {
+              color: #FBC02D;
+            }
+
+            &:hover {
+              cursor: pointer;
+              color: #FBC02D;
+            }
+          }
         }
 
         p {

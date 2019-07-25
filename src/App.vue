@@ -11,6 +11,13 @@
             <img src="https://static.dezeen.com/uploads/2019/07/elon-musk-neuralink-technology_dezeen_2364_hero-1.jpg" alt="">
           </div>
           <h1>Elon Musk's Neuralink implant will "merge" humans with AI</h1>
+          <div class="rating">
+            <i class="fas fa-star selected"></i>
+            <i class="fas fa-star selected"></i>
+            <i class="fas fa-star selected"></i>
+            <i class="fas fa-star selected"></i>
+            <i class="fas fa-star"></i>
+          </div>
           <p>The approaching technology would see groups of minuscule, flexible electrode "threads" implanted into the human brain by a neurosurgical robot.</p>
           <p>These threads detect and record the electrical signals in the brain, and transmit this information outside the body.</p>
         </div>
